@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {display: flex; align-items: center; justify-content: center;}
+        #main {display: inline-flex; flex-wrap: wrap; width: 500px; align-items: center;justify-content: center;}
+        .a{width:100px; height: 100px;margin: 20px 20px;background-color:{{backgroundcolor}};}
+    </style>
+</head>
+<body>
+    <div id="main">
+        {% for i in range(count): %}
+    <div class="a"></div> 
+    {% endfor %}
+    </div>
+</body>
+</html>
